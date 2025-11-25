@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小狗迷宫 - 儿童迷宫游戏</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>🐕 小狗找奖品 🏆</h1>
+        <div class="maze-selector">
+            <label for="maze-select">选择迷宫：</label>
+            <select id="maze-select"></select>
+        </div>
+        <div id="maze-grid" class="maze-grid"></div>
+        <div class="controls">
+            <button class="control-btn" id="btn-up">⬆️</button>
+            <div class="horizontal-controls">
+                <button class="control-btn" id="btn-left">⬅️</button>
+                <button class="control-btn" id="btn-down">⬇️</button>
+                <button class="control-btn" id="btn-right">➡️</button>
+            </div>
+        </div>
+        <p class="instructions">用方向键或点击按钮移动小狗到奖品处！</p>
+    </div>
+    <div id="win-dialog" class="dialog hidden">
+        <div class="dialog-content">
+            <h2>🎉 太棒了！🎉</h2>
+            <p id="win-message">你真聪明！成功帮小狗找到了奖品！</p>
+            <button id="play-again">再玩一次</button>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
